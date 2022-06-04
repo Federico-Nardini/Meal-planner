@@ -1,0 +1,206 @@
+/* primary: #D9E1D8 (light green)
+   secondary: #195C52 (dark green
+   font-family: 'Work Sans', sans-serif;
+   font-family: 'Caveat', cursive;*/
+* {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: #288cff; */
+    color: #4e8d53;
+}
+
+html,
+body {
+
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+
+
+}
+
+body {
+    overflow: hidden;
+    /* background-color: #f5f4f4; */
+    background-color: #f0fff1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+section {
+    display: flex;
+    flex-direction: row;
+    /* height: calc(100% - 109px); */
+    height: 100%;
+    width: 100%;
+    min-width: 1321px;
+
+}
+
+#planner {
+    flex-grow: 4;
+    /* border-right: 2px solid; */
+    text-align: center;
+    height: 100%;
+    width: 80%;
+    box-sizing: border-box;
+
+}
+
+#planner h2 {
+
+    border-bottom: 2px solid;
+    margin: 0px;
+    padding: 20px;
+}
+
+#grocList {
+    width: 20%;
+    box-sizing: border-box;
+}
+
+#grocList h2 {
+    text-align: center;
+    color: #4e8d53;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    border-spacing: 0px;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+
+th {
+    width: calc(100%/8);
+    height: 250px;
+}
+
+
+
+#firstRow th {
+    height: 30px;
+}
+
+td {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+.card {
+    border-radius: 5px;
+    width: 100%;
+    min-width: 120px;
+    height: 100%;
+    background-color: #ffffff;
+    color: #292929;
+    box-sizing: border-box;
+    padding: 20px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    font-family: 'Caveat', cursive;
+    resize: none;
+    font-size: 22px;
+    /* text-align: center; */
+    overflow: hidden;
+    line-height: 19px;
+    vertical-align: middle;
+    transition: box-shadow 0.1s linear;
+
+
+}
+
+.card:hover {
+    border: none;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: box-shadow 0.1s linear;
+
+}
+
+.card:focus {
+    border: none;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: box-shadow 0.1s linear;
+}
+
+.smaller {
+    width: calc(100%/12);
+}
+
+#foglio {
+    height: calc(100% - 28px);
+    padding-left: 20px;
+    padding-right: 35px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#listaSpesa {
+    height: 100%;
+    width: 100%;
+    resize: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 20px;
+    font-size: 24px;
+    color: #24301e;
+    background-color: #cdeecc;
+    font-family: 'Caveat', cursive;
+}
+
+#listaSpesa:focus {
+    border: none;
+    outline: none;
+}
+
+#footer {
+    height: 50px;
+    background-color: #292929;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+#footer p {
+    color: rgb(255, 255, 255);
+}
+
+#footer p a {
+    text-decoration: none;
+    color: #c79200;
+}
+
+#header {
+    background-color: #75aa7b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+h1 {
+
+    font-size: 40px;
+    text-align: center;
+    /* border-bottom: 2px solid; */
+    margin: 10px;
+    padding: 30px;
+    color: rgb(12, 56, 18);
+}
+
+#header img {
+    margin-bottom: 20px;
+}
