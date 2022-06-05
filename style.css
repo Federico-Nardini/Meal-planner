@@ -107,7 +107,7 @@ td {
     width: 100%;
     min-width: 80px;
     height: 100%;
-    background-color: #ffffff;
+    background-color: #f9f9f9;
     color: #292929;
     box-sizing: border-box;
     padding: 8%;
@@ -164,7 +164,7 @@ td {
     padding: 20px;
     font-size: 24px;
     color: #24301e;
-    background-color: #cdeecc;
+    background-color: #e9d7bc;
     font-family: 'Caveat', cursive;
     /* min-width: 240px; */
 }
@@ -175,8 +175,8 @@ td {
 }
 
 #footer {
-    height: 7%;
-    background-color: #151815ab;
+    height: 4%;
+    background-color: #25272c;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -233,7 +233,8 @@ td {
 
 
 .LMHeader {
-    background-color: #75aa7b;
+    /* background-color: #75aa7b; */
+    background-color: #25272c;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -241,11 +242,12 @@ td {
 }
 
 .LMBackground {
-    background-color: #f0fff1;
+    /* background-color: #f0fff1; */
+    background-color: #ff711f;
 }
 
 .LMText {
-    color: #4e8d53;
+    color: #812f00;
 }
 
 .LMCard {
