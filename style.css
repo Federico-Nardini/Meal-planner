@@ -187,6 +187,7 @@ td {
     color: rgb(255, 255, 255);
     width: 60%;
     text-align: center;
+    font-size: 14px;
 }
 
 #footer p a {
@@ -244,14 +245,19 @@ td {
 .LMBackground {
     /* background-color: #f0fff1; */
     background-color: #ff711f;
+
+
 }
 
 .LMText {
-    color: #812f00;
+    color: #fff;
+
+
 }
 
 .LMCard {
     background-color: #292929;
+
 }
 
 
@@ -260,7 +266,7 @@ td {
 
 
 .DMHeader {
-    background-color: #20202200;
+    background-color: #25272c;
 }
 
 .DMBackground {
@@ -315,7 +321,7 @@ td {
     display: block;
     width: 40px;
     height: 20px;
-    background-color: #fff;
+    background-color: #ff711f;
     cursor: pointer;
     border-radius: 20px;
     overflow: hidden;
@@ -334,7 +340,7 @@ td {
     position: absolute;
     top: 2px;
     left: 2px;
-    background-color: #35373b;
+    background-color: #fff;
     width: 16px;
     height: 16px;
     border-radius: 50%;
