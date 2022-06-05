@@ -18,10 +18,10 @@
     <title>Meal Prep</title>
 </head>
 
-<body>
-    <div id="header">
+<body class="LMBackground">
+    <div class="LMHeader">
         <!-- <h1>Meal planner</h1> -->
-        <img src="images/Meal_Prep_logo.png" alt="">
+        <img src="images/icona_w_1.svg" alt="">
     </div>
 
     <section>
@@ -33,17 +33,17 @@
             <table>
                 <tr id="firstRow">
                     <th class="smaller"></th>
-                    <th>MON</th>
-                    <th>TUE</th>
-                    <th>WED</th>
-                    <th>THU</th>
-                    <th>FRI</th>
-                    <th>SAT</th>
-                    <th>SUN</th>
+                    <th class="LMText">MON</th>
+                    <th class="LMText">TUE</th>
+                    <th class="LMText">WED</th>
+                    <th class="LMText">THU</th>
+                    <th class="LMText">FRI</th>
+                    <th class="LMText">SAT</th>
+                    <th class="LMText">SUN</th>
                 </tr>
 
                 <tr id="allLunch">
-                    <th class="smaller">LUNCH</th>
+                    <th class="smaller LMText">LUNCH</th>
                     <td>
 
                     </td>
@@ -56,7 +56,7 @@
                 </tr>
 
                 <tr id="allDinner">
-                    <th class="smaller">DINNER</th>
+                    <th class="smaller LMText">DINNER</th>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -72,15 +72,26 @@
 
 
         <div id="grocList">
-            <h2>Extra notes</h2>
+            <h2 class="LMText">Extra notes</h2>
             <div id="foglio">
-                <textarea id="listaSpesa"></textarea>
+                <textarea class="listaSpesa"></textarea>
             </div>
         </div>
     </section>
 
     <div id="footer">
+        <!-- <button class="themeButton"></button> -->
+        <div class="darkModeSection">
+            <p>Dark mode:</p>
+            <label class="switchBtn">
+                <input type="checkbox" class="swBtn">
+                <span class="check"></span>
+            </label>
+        </div>
+
+
         <p>Made by Federico Nardini [<a href="https://github.com/Federico-Nardini"> GitHub </a>]</p>
+        <div id="spazio"></div>
     </div>
 
 

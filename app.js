@@ -1,6 +1,6 @@
 const rows = document.querySelectorAll("td")
 const save = document.querySelector("#saveBtn")
-const lista = document.querySelector("#listaSpesa")
+const lista = document.querySelector(".listaSpesa")
 
 
 for (let i = 0; i < (rows.length); i++) {
@@ -31,6 +31,27 @@ lista.addEventListener("input", function () {
     localStorage.setItem(`textareaLista`, JSON.stringify(lista.value))
 })
 
+
+//Dark mode implementation
+const header = document.querySelector(".LMHeader")
+const background = document.querySelector(".LMBackground")
+const switchBtn = document.querySelector(".swBtn")
+const listaSpesa = document.querySelector(".listaSpesa")
+const texts = document.querySelectorAll(".LMText")
+const cards = document.querySelectorAll(".card")
+
+switchBtn.addEventListener("click", function (e) {
+    header.classList.toggle("DMHeader");
+    background.classList.toggle("DMBackground")
+    listaSpesa.classList.toggle("DMLista")
+    for (let text of texts) {
+        text.classList.toggle("DMText")
+    }
+    for (let card of cards) {
+        card.classList.toggle("DMCard")
+    }
+
+})
 
 
 

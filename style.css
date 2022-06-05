@@ -23,8 +23,6 @@ body {
 
 body {
     overflow: hidden;
-    /* background-color: #f5f4f4; */
-    background-color: #f0fff1;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -74,7 +72,7 @@ section {
 
 #grocList h2 {
     text-align: center;
-    color: #4e8d53;
+
     width: 100%;
 }
 
@@ -116,6 +114,7 @@ td {
     border: none;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     font-family: 'Caveat', cursive;
+    /* font-family: 'Work Sans', sans-serif; */
     resize: none;
     font-size: 20px;
     /* text-align: center; */
@@ -155,7 +154,7 @@ td {
     padding-top: 20px;
 }
 
-#listaSpesa {
+.listaSpesa {
     height: 100%;
     width: 100%;
     resize: none;
@@ -170,14 +169,14 @@ td {
     /* min-width: 240px; */
 }
 
-#listaSpesa:focus {
+.listaSpesa:focus {
     border: none;
     outline: none;
 }
 
 #footer {
     height: 7%;
-    background-color: #292929;
+    background-color: #151815ab;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,6 +185,8 @@ td {
 
 #footer p {
     color: rgb(255, 255, 255);
+    width: 60%;
+    text-align: center;
 }
 
 #footer p a {
@@ -193,31 +194,10 @@ td {
     color: #c79200;
 }
 
-#header {
-    background-color: #75aa7b;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 21%;
+#spazio {
+    width: 20%;
 }
 
-h1 {
-
-    font-size: 40px;
-    text-align: center;
-    /* border-bottom: 2px solid; */
-    margin: 10px;
-    padding: 30px;
-    color: rgb(12, 56, 18);
-}
-
-#header img {
-    width: 35%;
-    min-width: 390px;
-    max-width: 550px;
-    height: auto;
-    margin-bottom: 20px;
-}
 
 @media screen and (max-width: 1280px) {
     .card {
@@ -225,7 +205,7 @@ h1 {
         line-height: 16px;
     }
 
-    #listaSpesa {
+    .listaSpesa {
         font-size: 20px;
     }
 }
@@ -237,7 +217,146 @@ h1 {
         line-height: 14px;
     }
 
-    #listaSpesa {
+    .listaSpesa {
         font-size: 18px;
     }
+}
+
+.LMHeader img {
+    width: 35%;
+    min-width: 390px;
+    max-width: 550px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+
+.LMHeader {
+    background-color: #75aa7b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 21%;
+}
+
+.LMBackground {
+    background-color: #f0fff1;
+}
+
+.LMText {
+    color: #4e8d53;
+}
+
+.LMCard {
+    background-color: #292929;
+}
+
+
+
+
+
+
+.DMHeader {
+    background-color: #20202200;
+}
+
+.DMBackground {
+    background-color: #25272c;
+}
+
+.DMText {
+    /* color: #d1d1d1; */
+    color: #e4a00d;
+}
+
+.DMCard {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.DMLista {
+    background-color: #1f2125;
+    color: white;
+}
+
+.switchBtn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.darkModeSection {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 4px;
+
+}
+
+.darkModeSection p {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+
+}
+
+.switchBtn input {
+    appearance: none;
+    visibility: hidden;
+    display: none;
+}
+
+.check {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 0.5s;
+
+}
+
+.switchBtn input:checked~.check {
+    background-color: #35373b;
+
+}
+
+.check::before {
+
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background-color: #35373b;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.switchBtn input:checked~.check::before {
+    transform: translateX(-50px);
+}
+
+.check::after {
+
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: #fff;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: 0.5s;
+    transform: translateX(50px);
+}
+
+.switchBtn input:checked~.check::after {
+    transform: translateX(0px);
 }
