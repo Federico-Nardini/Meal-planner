@@ -9,10 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+
     <link rel="icon" type="image/x-icon" href="images/icona_1.svg">
     <link
         href="https://fonts.googleapis.com/css2?family=Caveat&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <title>Meal Prep</title>
@@ -27,58 +36,57 @@
     <section>
 
 
-        <div id="planner">
-            <!-- <h2>Weekly meals</h2> -->
 
-            <table>
-                <tr id="firstRow">
-                    <th class="smaller"></th>
-                    <th class="LMText">MON</th>
-                    <th class="LMText">TUE</th>
-                    <th class="LMText">WED</th>
-                    <th class="LMText">THU</th>
-                    <th class="LMText">FRI</th>
-                    <th class="LMText">SAT</th>
-                    <th class="LMText">SUN</th>
-                </tr>
-
-                <tr id="allLunch">
-                    <th class="smaller LMText">LUNCH</th>
-                    <td>
-
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-                <tr id="allDinner">
-                    <th class="smaller LMText">DINNER</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-
-        </div>
-
-
-
-        <div id="grocList">
-            <h2 class="LMText">Extra notes</h2>
-            <div id="foglio">
-                <textarea class="listaSpesa"></textarea>
+        <!-- <h2>Weekly meals</h2> -->
+        <div class="flex-container">
+            <div class="flex-col header-row">
+                <div class="header-top" id="spazio-vuoto"></div>
+                <div class="header-top LMText">MON</div>
+                <div class="header-top LMText">TUE</div>
+                <div class="header-top LMText">WED</div>
+                <div class="header-top LMText">THU</div>
+                <div class="header-top LMText">FRI</div>
+                <div class="header-top LMText">SAT</div>
+                <div class="header-top LMText">SUN</div>
             </div>
-        </div>
-    </section>
 
+            <div class="flex-col">
+                <div class="header-side LMText" id="lunch">LUNCH</div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+            </div>
+
+            <div class="flex-col">
+                <div class="header-side LMText" id="dinner">DINNER</div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </section>
+    <div id="grocList">
+        <h2 class="LMText">Extra notes</h2>
+        <div id="foglio">
+            <textarea class="listaSpesa"></textarea>
+        </div>
+    </div>
     <div id="footer">
         <!-- <button class="themeButton"></button> -->
         <div class="darkModeSection">
@@ -90,7 +98,7 @@
         </div>
 
 
-        <p>Made by Federico Nardini [<a href="https://github.com/Federico-Nardini"> GitHub </a>]</p>
+        <p id="madeBy">Made by Federico Nardini [<a href="https://github.com/Federico-Nardini"> GitHub </a>]</p>
         <div id="spazio"></div>
     </div>
 

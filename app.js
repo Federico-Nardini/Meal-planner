@@ -1,4 +1,4 @@
-const rows = document.querySelectorAll("td")
+const rows = document.querySelectorAll(".td")
 const save = document.querySelector("#saveBtn")
 const lista = document.querySelector(".listaSpesa")
 
