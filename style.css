@@ -539,6 +539,10 @@ td {
         display: none;
     }
 
+    #footer {
+        height: 10%;
+    }
+
     #footer p {
         width: 90%;
     }
