@@ -27,66 +27,69 @@
     <title>Meal Prep</title>
 </head>
 
-<body class="LMBackground">
+<body>
     <div class="LMHeader">
         <!-- <h1>Meal planner</h1> -->
         <img src="images/icona_w_1.svg" alt="">
     </div>
+    <div class="mainDiv LMBackground">
+        <section>
 
-    <section>
 
 
+            <!-- <h2>Weekly meals</h2> -->
+            <div class="flex-container">
+                <div class="flex-col header-row">
+                    <div class="header-top" id="spazio-vuoto"></div>
+                    <div class="header-top LMText">MON</div>
+                    <div class="header-top LMText">TUE</div>
+                    <div class="header-top LMText">WED</div>
+                    <div class="header-top LMText">THU</div>
+                    <div class="header-top LMText">FRI</div>
+                    <div class="header-top LMText">SAT</div>
+                    <div class="header-top LMText">SUN</div>
+                </div>
 
-        <!-- <h2>Weekly meals</h2> -->
-        <div class="flex-container">
-            <div class="flex-col header-row">
-                <div class="header-top" id="spazio-vuoto"></div>
-                <div class="header-top LMText">MON</div>
-                <div class="header-top LMText">TUE</div>
-                <div class="header-top LMText">WED</div>
-                <div class="header-top LMText">THU</div>
-                <div class="header-top LMText">FRI</div>
-                <div class="header-top LMText">SAT</div>
-                <div class="header-top LMText">SUN</div>
+                <div class="flex-col">
+                    <div class="header-side LMText" id="lunch">LUNCH</div>
+                    <div class="td"></div>
+                    <div class="td"></div>
+                    <div class="td"></div>
+                    <div class="td"></div>
+                    <div class="td"></div>
+                    <div class="td"></div>
+                    <div class="td"></div>
+                </div>
+
+                <div class="flex-col">
+                    <div class="header-side LMText" id="dinner">DINNER</div>
+                    <div class="td"></div>
+                    <div class="td"></div>
+                    <div class="td"></div>
+                    <div class="td"></div>
+                    <div class="td"></div>
+                    <div class="td"></div>
+                    <div class="td"></div>
+                </div>
+
             </div>
 
-            <div class="flex-col">
-                <div class="header-side LMText" id="lunch">LUNCH</div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-            </div>
 
-            <div class="flex-col">
-                <div class="header-side LMText" id="dinner">DINNER</div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-            </div>
 
+
+
+
+
+        </section>
+        <div id="grocList">
+            <h2 class="LMText">EXTRA NOTES</h2>
+            <div id="foglio">
+                <textarea class="listaSpesa"></textarea>
+            </div>
         </div>
 
-
-
-
-
-
-
-    </section>
-    <div id="grocList">
-        <h2 class="LMText">Extra notes</h2>
-        <div id="foglio">
-            <textarea class="listaSpesa"></textarea>
-        </div>
     </div>
+
     <div id="footer">
         <!-- <button class="themeButton"></button> -->
         <div class="darkModeSection">

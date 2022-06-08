@@ -40,7 +40,9 @@ const listaSpesa = document.querySelector(".listaSpesa")
 const texts = document.querySelectorAll(".LMText")
 const cards = document.querySelectorAll(".card")
 
-switchBtn.addEventListener("click", function (e) {
+
+
+switchBtn.addEventListener("change", function (e) {
     header.classList.toggle("DMHeader");
     background.classList.toggle("DMBackground")
     listaSpesa.classList.toggle("DMLista")
@@ -52,6 +54,10 @@ switchBtn.addEventListener("click", function (e) {
     }
 
 })
+
+
+
+
 
 
 

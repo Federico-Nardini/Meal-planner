@@ -37,12 +37,13 @@ section {
     display: flex;
     flex-direction: row;
     /* height: calc(100% - 109px); */
-    height: 50%;
+    height: 55%;
 
     /* min-width: 1011px; */
     padding-left: 30px;
     padding-right: 60px;
     box-sizing: border-box;
+    margin-bottom: 1%;
 
 
 
@@ -68,8 +69,8 @@ section {
 #grocList {
     width: 100%;
     box-sizing: border-box;
-    height: 38%;
-    padding-top: 10px;
+    height: 45%;
+
 
 
 }
@@ -78,6 +79,8 @@ section {
     text-align: center;
     margin-bottom: 5px;
     width: 100%;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 table {
@@ -128,6 +131,10 @@ td {
     transition: box-shadow 0.1s linear;
 
 
+    background-color: #25272c;
+    color: white;
+
+
 }
 
 .card:hover {
@@ -167,8 +174,8 @@ td {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     padding: 20px;
     font-size: 24px;
-    color: #24301e;
-    background-color: #e8f0eb;
+    background-color: #25272c;
+    color: white;
     font-family: 'Caveat', cursive;
     /* min-width: 240px; */
 }
@@ -184,7 +191,7 @@ td {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2%;
+
 }
 
 #footer p {
@@ -232,7 +239,8 @@ td {
     min-width: 390px;
     max-width: 550px;
     height: auto;
-    margin-bottom: 20px;
+
+    max-height: 65px;
 }
 
 
@@ -246,13 +254,15 @@ td {
     height: 10%;
     width: 100%;
     padding-top: 2%;
-    padding-bottom: 1%;
-    margin-bottom: 1%;
+    padding-bottom: 2.3%;
+
+
 }
 
 .LMBackground {
     /* background-color: #f0fff1; */
-    background-color: #3e916e;
+    /* background-color: #3e916e; */
+    background-color: #fd9e72;
 
 
 }
@@ -329,7 +339,7 @@ td {
     display: block;
     width: 40px;
     height: 20px;
-    background-color: #3e916e;
+    background-color: #fd9e72;
     cursor: pointer;
     border-radius: 20px;
     overflow: hidden;
@@ -386,6 +396,7 @@ td {
     /* margin-top: 1%; */
     box-sizing: border-box;
     justify-content: space-between;
+
 }
 
 .flex-col {
@@ -426,6 +437,24 @@ td {
     transform: rotate(-90deg);
 
 
+}
+
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 2%;
+    padding-top: 1%;
+    padding-left: 15%;
+    padding-right: 15%;
+
+}
+
+@media all and (max-width: 1420px) {
+    .mainDiv {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
 
 @media all and (max-width: 970px) {
@@ -475,6 +504,7 @@ td {
         padding-right: 5px;
         height: 100%;
         margin-top: 0px;
+
     }
 
     #grocList {
@@ -513,7 +543,7 @@ td {
         padding: 2%;
         padding-left: 3%;
         padding-right: 3%;
-        border-radius: 8px;
+        border-radius: 4px;
         box-shadow: none;
         /* font-family: 'Work Sans', cursive; */
         font-weight: 400;
@@ -555,5 +585,7 @@ td {
         margin-left: 6%;
 
     }
+
+    .mainDiv {}
 
 }
