@@ -458,6 +458,11 @@ td {
 }
 
 @media all and (max-width: 970px) {
+    .listaSpesa:focus {
+        box-shadow: none;
+        background-color: #202227;
+    }
+
     .flex-container {
         flex-direction: row;
         gap: 4px;
@@ -552,7 +557,7 @@ td {
 
     .card:focus {
         box-shadow: none;
-        background-color: #f0f0f0;
+        background-color: #202227;
     }
 
     .DMCard:focus {
@@ -586,6 +591,6 @@ td {
 
     }
 
-    .mainDiv {}
+
 
 }
