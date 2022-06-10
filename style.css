@@ -440,6 +440,11 @@ td {
 
 }
 
+#spazio-vuoto {
+
+    width: 100px;
+}
+
 .mainDiv {
     display: flex;
     flex-direction: column;
